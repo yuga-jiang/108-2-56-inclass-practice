@@ -150,4 +150,54 @@ b <- c(4,-1, 3)
 a*b
 ```
 
+```{r}
+example <- list(
+  name=c("小明","小花","小新","美美"),
+  height=c(175,166,170,160),
+  weight=c(77,NA,60,43),
+  birthday=lubridate::ymd(c("1998-03-11","1999-12-22","1995-08-22","2001-10-10")),
+  hobby=c("美食 旅遊","旅遊 時尚","3C 美食","音樂 旅遊"),
+  residence=c("Taipei","New Taipei","Taichung","Kaohsiung"),
+  allowance=factor(c("0-1000","1001-2000","2000+","1001-2000")),
+  bloodType=c("A","B","B","O")
+)
+ 
+```
+
+```{r}
+print(example[c("name","allowance")])
+example$allowance = ordered(example$allowance)
+
+pick_allowanceOver1000 <- example$allowance >= "1001-2000"
+example$name[pick_allowanceOver1000]
+```
+```{r}
+jsonlite::fromJSON("https://www.dropbox.com/s/3uijub7xheib405/list_victimAges_female.json?dl=1", simplifyDataFrame = F) -> list_victimAges_female
+```
+```{r}
+
+sum(list_victimAges_female$`數目`, na.rm=T)
+```
+
+```{r}
+list_victimAges_female$`數目` =
+  as.integer(list_victimAges_female$`數目`)
+list_victimAges_female$`年齡層` = as.factor(list_victimAges_female$`年齡層`)
+
+```
+
+```{r}
+levels(list_victimAges_female$`年齡層`) -> levels_ages
+print(levels_ages)
+```
+
+```{r}
+str(levels_ages)
+
+```
+
+```{r}
+sum(list_victimAges_female$數目, na.rm=T)
+sum(list_victimAges_female$數目[pick_above30], na.rm = T)
+```
 
