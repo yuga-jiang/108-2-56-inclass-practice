@@ -1,0 +1,25 @@
+{
+    "collab_server" : "",
+    "contents" : "",
+    "created" : 1586687263310.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "2881520308",
+    "id" : "A87A5E14",
+    "lastKnownWriteTime" : 1586687233,
+    "last_content_update" : 1586687233,
+    "path" : "C:/Users/amos/Downloads/108-2-hw1-4.R",
+    "project_path" : null,
+    "properties" : {
+        "cursorPosition" : "0,0",
+        "scrollLine" : "0"
+    },
+    "read_only" : false,
+    "read_only_alternatives" : [
+    ],
+    "relative_order" : 4,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_source"
+}

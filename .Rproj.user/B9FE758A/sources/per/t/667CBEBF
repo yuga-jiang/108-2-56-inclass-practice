@@ -1,0 +1,26 @@
+{
+    "collab_server" : "",
+    "contents" : "",
+    "created" : 1586690514582.000,
+    "dirty" : false,
+    "encoding" : "",
+    "folds" : "",
+    "hash" : "0",
+    "id" : "667CBEBF",
+    "lastKnownWriteTime" : 6877125773773464354,
+    "last_content_update" : 1586690514582,
+    "path" : null,
+    "project_path" : null,
+    "properties" : {
+        "id" : "d6b36991453b4cfc8ee6ea85103ed459",
+        "name" : "two_times",
+        "title" : "two_times"
+    },
+    "read_only" : false,
+    "read_only_alternatives" : [
+    ],
+    "relative_order" : 6,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "object_explorer"
+}
