@@ -197,7 +197,7 @@ str(levels_ages)
 ```
 
 ```{r}
-sum(list_victimAges_female$數目, na.rm=T)
-sum(list_victimAges_female$數目[pick_above30], na.rm = T)
+sum(list_victimAges_female$`數目`, na.rm=T)
+sum(list_victimAges_female$`數目`[pick_above30], na.rm = T)
 ```
 
